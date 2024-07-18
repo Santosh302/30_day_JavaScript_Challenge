@@ -10,11 +10,14 @@ var i=10;
 console.log(i);
 
 /* Task 2: Declare a variable using let, assign it a string, and log the value to the console.*/
+var a="Hi Santosh";
+console.log(a);
 
 
 /*  Activity 2: constant Declaration */
 
 /*  Tasks 3: Declare a variablel using const, assign it a boolean value, and log the value to the console. */
+
 
 
  /* Activity 3: Data Types */ 
