@@ -1,47 +1,42 @@
-/* Loops */
+/* Functions */
 
-/* Activity 1 For Loop:
-*Task 1: Write a program to print number from 1 to 10 using a  for loop.
-*Task 2: Write a program to print the multiplication table of 5 using a for loop.
+/* Activity 1: Function Declaration 
+Task 1: Write a function to check if a number is even or odd and log the result to the conosole.
+Task 2: Write a function to calculate the square of a number and return the result.
 */
 
-/* Activity 2:While Loop
-*Task 3: Write a program to calculate the sum of numbers from 1 to 10 using a while loop.
-*Task 4:Write a program to print numbers from 10 to 1 using a while loop.
-*/
+ /* Activity 2: Function Expression 
+ Task 3: Write a function expression to find the maximum of two numbers and log the result to the console.
+ Task 4: Write a function expression to concatenate two string and return the result.
+ */
 
-/* Activity 3:Do..While Loop
+ /* Activity 3: Arrow Expression
+ Task 5: Write an arrow function to calculate the sum of two number and return the result.
+ Task 6: Write an arrow function to check if a string contains a specific charater and return a boolean value.
+ */
 
-Task 5:Write a program to print number from 1 to 5 using a do...while loop.
-Task 6:Write a program to calculate the factorial of a number using a do...While loop.
-*/
+ /* Activity 4: Functions Parameters and Default Values
+ Task 7: Write a function that takes two parameters and returns their product. Provide a default value for the second parameter.
+ Task 8: Write a function that takes a person's name and age and returns a greeting message. Provide a default value for the age.
+ */
 
-/* Activity 4: Nested Loops 
-Task 7:Write a program to print a pttern using nested for loops:
-*
-**
-***
-****
-*****
-*/
+ /* Activity 5:Higher-Order Functions
+ Task 9: Write a higher-order function that takes a function and a number, and calls the function that many times.
+ Task 10: Write a higher-order function that takes two functions and a value, applies the functions to the value, and then applies the second function to the result.
+ */
 
-/* Activity 5: Loop Control Statements
-Task 8: Write a program to print numbers from 1 to 10, but skip the number 5 using the continue statement.
-Task 9:Write a program to print numbers from 1 to 10,but stop the loop when the number is 7 using the break statement
-*/
+ /* Feature Request:
+ 1:Even or Odd Functions Script: Write a script that inclues a function to check if a number is even or odd and logs the result.
+ 2:Square Calculation Function Script: Create a script that includes a function to calculate the square of a number and return the result.
+ 3:Concatenation Function Script:Write a script that includes a function expression to concatenate two string and return the result.
+ 4:Sum Calculation Arrow Function Script: Create a script that includes an arrow function to calculate the sum of two numbers and returns the result.
+ 5:Higher-Order Function Script: Write a script that includes a higher-order function to apply a given function multiple timies.
+ */
 
-/* Feature Request:
-1.Number Printing script:Write a Script that prints numbers from 1 to  10 using a for loop and a while loop.
-2.Multiplication Table Script:Create a script that prints the multiplications table of 5 using a for loop .
-3.Pattern Printing Script:Write a script that prints a pattern of stars using nested loops.
-4.Sum Calculation Script: Write a script that calculates the sum of numbers from 1 to 10 using a while loop.
-5.Factorial Calculation Script: Create a script that calculates the factorial of a number using a do..while loop.
-*/
-
-/* Achievement:
-*Understand and use for loops to iterate over a sequence of numbers.
-*Utilize while loops for iteration based on a condition.
-*Apply do..while loops to ensure the loop body is executed at least once.
-*Implement nested loops to solve more complex problems.
-*Use loop control statement(break and continue) to control the flow of loops
+/* Achivement:
+* Understand and define functions using function declarations, expressions, and arrow functions.
+* Use function parameter and default values effectively.
+* Create and utilize highter-order functions.
+* Apply functions to solve common problems and perform calculations.
+* Enhance code reusability and organization using functions.
 */
