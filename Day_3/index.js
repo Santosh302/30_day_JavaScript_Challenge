@@ -1,6 +1,6 @@
 /* Control Structures */
 
-/* Activity 1: if-Else Statements 
+ /* Activity 1: if-Else Statements 
  Task 1: Write a program to check if a number is positive, negative, or zero, and log the result to the console.
  Task 2: Write a program to check if a person is eligible to vote (a>=18) and log the result to the console.
  */
