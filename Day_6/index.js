@@ -9,7 +9,8 @@ Task 2: Access the first and last element of the array and log them to the conso
 /* Activity 2:Array Methods(Basic)
 Task 3: Use the push method to add a new number to the end of the array and log the updated array.
 Task 4: Use the pop method to remove the last element from the array and log the updated array.
-Task 5: Use the unshift method to add a new number to the beginning of the array and log the updated array.
+Task 5:Use the shift method to remove the first element from the array and log the updated array.
+Task 6: Use the unshift method to add a new number to the beginning of the array and log the updated array.
 */
 
 /* 
@@ -24,7 +25,7 @@ Task 10: Use a for loop to iterate over the array and log each element to the co
 Task 11: Use the forEach method to iterate over the array and log each element to the console.
 */
 
-/* Activity 5: Multi-dimensional array
+/* Activity 5: Multi-dimensional arrays
 Task 12: Create a two-dimensional array(matrix) and log the entire array to the console.
 Task 13: Access and log a specific element form the two-dimensional array.
 */
