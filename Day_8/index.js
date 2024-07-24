@@ -1,7 +1,7 @@
 /* ES6+ Features */
 
 /* Activity 1: Template Literals
-Task 1: Use template to create a string that includes variables for a person's name and age, and log the string to the console.
+Task 1: Use template literals to create a string that includes variables for a person's name and age, and log the string to the console.
 Task 2:Create a multi-line string using template literals and log it to the console.
 
 */
@@ -11,8 +11,8 @@ Task 3: Use array destructuring to extract the first and second elements from an
 Task 4:Use object destructuring to extract the title and author from a book object and log them to the console.
 */
 
-/* Activity 3:Spred and Rest Operator 
-Task 5: Use the spred operator to create a new array that includes all elements of an existing array plus additional elements, and log the new array to the console.
+/* Activity 3:Spread and Rest Operator 
+Task 5: Use the spread operator to create a new array that includes all elements of an existing array plus additional elements, and log the new array to the console.
 Task 6: Use the rest operator in function to accept an arbitrary number of arguments, sum them, and return the result.
 */
 
