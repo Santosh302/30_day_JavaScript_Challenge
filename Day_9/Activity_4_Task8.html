@@ -1,0 +1,32 @@
+<!-- Task 8: Add and remove a CSS class to/from an HTML element. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .highlight{
+            background-color: black;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div id="myDiv">Hello, World !</div>
+    <button onclick="addClass()">Add Class</button>
+    <button onclick="removeClass()">Remove Class</button>
+    <script>
+        function addClass(){
+            const divElement=document.getElementById("myDiv");
+            divElement.classList.add("highlight");
+
+        }
+        function removeClass(){
+            const divElement= document.getElementById("myDiv");
+            divElement.classList.remove("highlight");
+        }
+    </script>
+</body>
+</html>
