@@ -1,0 +1,25 @@
+<!--  Activity 5: Event Handling
+Task 9: Add a click event listener to a button that changes the text content of a paragraph.
+
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>JavaScript DOM</title>
+ </head>
+ <body>
+     <p id="text">This is Santosh Kumar Yadav</p>
+     <button id="changeTextButton">Change text</button>
+ 
+     <script>
+         function textChange() {
+             document.getElementById("text").innerHTML = "Santosh Kumar Yadav";
+         }
+ 
+         document.getElementById("changeTextButton").addEventListener("click", textChange);
+     </script>
+ </body>
+ </html>
+ 
