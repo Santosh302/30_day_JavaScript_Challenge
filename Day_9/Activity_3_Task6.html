@@ -1,0 +1,24 @@
+<!-- Task 6: Remove the last child of a specific HTML element. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM</title>
+</head>
+<body>
+    <ul id="myList">
+        <li>item first</li>
+        <li>item second</li>
+        <li>item third</li>
+    </ul>
+
+    <script>
+      
+        const ulList= document.getElementById("myList");
+         const lastChild= ulList.lastElementChild;
+         ulList.removeChild(lastChild);
+    </script>
+</body>
+</html>
