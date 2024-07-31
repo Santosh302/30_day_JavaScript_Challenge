@@ -23,5 +23,9 @@ Task 10: Write  a regular expression to validate a URL. Log whether the URL is v
 */
 
 /* Feature Request:
-1
+1:Basic Regex Script: Write a script that uses regular expression to match simple pattern and log the matches.
+2: Character Classes and Quantifiers Script: Create a script that uses regular expressions to match words with specfic characteristics and log the matches.
+3:Grouping and Capturing Script: Write a script that uses regular expression to capture parts of a string, such as phone numbers and email address, and log the captures.
+4:Assertions and Boundaries Script: Create a script that uses regular expression to match words at specific positions in a string and log the matches.
+5:Validation Script:Write a script that uses regular expressions to validate passwords and URLs and log wether they are valid.
 */
