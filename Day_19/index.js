@@ -29,3 +29,11 @@ Task 10: Write  a regular expression to validate a URL. Log whether the URL is v
 4:Assertions and Boundaries Script: Create a script that uses regular expression to match words at specific positions in a string and log the matches.
 5:Validation Script:Write a script that uses regular expressions to validate passwords and URLs and log wether they are valid.
 */
+
+/* Achievement: 
+*Understand and create basic regular expression.
+*Use character classes and quantifiers in regular expressions.
+*Implement grouping and capturing in regular expressions.
+*Apply assertions and boundaries in regular expressions.
+*Use regular expressions for practical applications like validating passwords and URLs.
+*/
