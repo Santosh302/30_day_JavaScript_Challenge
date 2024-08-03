@@ -1,0 +1,20 @@
+<!-- Task 5: Add a keydown event listner to an input field that log the key pressed to the console. -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keydown Event Listener</title>
+ </head>
+ <body>
+    <input type="text" id="inputField" placeholder="Please Enter Your Name">
+
+    <script>
+        const inputField= document.getElementById("inputField");
+
+        inputField.addEventListener("keydown", function(event){
+            console.log(`key pressed ${event.key}`);
+        });
+    </script>
+ </body>
+ </html>
