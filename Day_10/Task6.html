@@ -1,1 +1,22 @@
 <!-- Task 6: Add a keyup event listner to an input field that displays the current value in a paragraph. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyup Event Listener</title>
+</head>
+<body>
+    <input type="text" id ="inputField" placeholder="Type your name">
+    <p id="displayParagraph">Current Value: </p>
+     <script>
+        const inputField =document.getElementById('inputField');
+        const displayParagraph = document.getElementById('displayParagraph');
+
+        inputField.addEventListener('keyup', function(event){
+            displayParagraph.textContent= `Current value: ${inputField.value}`;
+        });
+     </script>
+</body>
+</html>
