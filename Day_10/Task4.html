@@ -1,1 +1,30 @@
 <!-- Task 4: Add a mouseout event listner to an element that resets its background color. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #hovertext {
+            transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="hovertext">Hi Santosh</h1>
+
+    <script>
+        const textBackground = document.getElementById("hovertext");
+
+        textBackground.addEventListener("mouseover", function() {
+            textBackground.style.backgroundColor = "yellow";
+        });
+
+        textBackground.addEventListener("mouseout", function() {
+            textBackground.style.backgroundColor = "";
+        });
+    </script>
+</body>
+</html>
