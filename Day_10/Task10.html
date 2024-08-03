@@ -1,1 +1,45 @@
 <!--Task 10: Add an event listner to a parent element that listens for events from dynamically added child elements.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Child</title>
+</head>
+<body>
+    <div id="parent">
+        <button id="addChild">Add Child</button>
+        <div id="childContainer">
+          <!-- Child elements will be added here dynamically -->
+        </div>
+      </div>
+      
+      <script>
+        // Select the parent element
+const parent = document.getElementById('parent');
+const childContainer = document.getElementById('childContainer');
+const addButton = document.getElementById('addChild');
+
+// Add a click event listener to the parent element
+parent.addEventListener('click', function(event) {
+  // Check if the clicked element is a dynamically added child
+  if (event.target.classList.contains('dynamic-child')) {
+    console.log('Dynamic child clicked:', event.target.textContent);
+  }
+});
+
+// Function to dynamically add a new child element
+addButton.addEventListener('click', function() {
+  // Create a new child element
+  const newChild = document.createElement('div');
+  newChild.textContent = 'Dynamic Child ' + (childContainer.children.length + 1);
+  newChild.classList.add('dynamic-child');
+  
+  // Append the new child element to the container
+  childContainer.appendChild(newChild);
+});
+
+      </script>
+</body>
+</html>
