@@ -1,8 +1,27 @@
 <!-- Event Handling -->
 <!--  Activity 1: Basic Event Handling 
 Task 1:Add a click event listner to a button that changes the text content of a paragraph.
-
  -->
 
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event</title>
+ </head>
+ <body>
+    <p id="text1">Hi Santosh </p>
+    <button onclick="textChange()">Change Text </button>
+
+    <script>
+        const Pargtext= document.getElementById("text1")
+
+        function textChange(){
+            Pargtext.innerHTML= "Hello Santosh Kumar Yadav";
+        }
+    </script>
+ </body>
+ </html>
 
 
