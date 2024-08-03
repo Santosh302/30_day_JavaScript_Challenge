@@ -1,1 +1,24 @@
 <!-- Task 2:Add a double-click event listner to an image that toggles its visibility. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Toggle Visibility</title>
+</head>
+<body>
+    <img id="toggleImage" src="santosh_photo.png" alt="Santosh img">
+    <script>
+        const img = document.getElementById("toggleImage");
+
+        img.addEventListener("dblclick", function() { 
+            if (img.style.display === "none") {
+                img.style.display = "block";
+            } else {
+                img.style.display = "none";
+            }
+        });
+    </script>
+</body>
+</html>
