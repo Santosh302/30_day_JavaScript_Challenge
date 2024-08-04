@@ -9,7 +9,6 @@ function createPromise(){
         }, 2000);
     });
 }
-
 createPromise().then((message)=>{
     console.log(message);
 });
