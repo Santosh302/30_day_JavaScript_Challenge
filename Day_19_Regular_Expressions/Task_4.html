@@ -1,2 +1,37 @@
 <!-- Task 4: Write a regular expression to match all sequences of one or more digits in a string.Log the matches.
  -->
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match Digit Sequences Example</title>
+</head>
+<body>
+
+    <script>
+        // Function to find all sequences of one or more digits in a string using a regular expression
+        function findDigitSequences(inputString) {
+            // Regular expression to match all sequences of one or more digits
+            const regex = /\d+/g;
+
+            // Find all matches
+            const matches = inputString.match(regex);
+
+            // Log the matches
+            if (matches) {
+                console.log('Digit sequences found:', matches);
+            } else {
+                console.log('No digit sequences found.');
+            }
+        }
+
+        // Example usage:
+        const testString = "My numbers are 123, 4567, and 890.";
+        findDigitSequences(testString);
+
+    </script>
+
+</body>
+</html>
