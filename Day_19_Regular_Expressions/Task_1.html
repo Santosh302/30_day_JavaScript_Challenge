@@ -1,3 +1,38 @@
 <!-- Activity 1: Basic Regular Expressions
 Task 1: Write a regular expression to match a simple pattern (e.g, match all occurrences of the word "JavaScript" in a string). Log the matches.
  -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Expression Example</title>
+ </head>
+ <body>
+    
+    <script>
+        //Function to find all occurrences of "javascript" in a string using a regular expression
+        function findJavaScriptOccurrences(inputString){
+
+            //Regular expression to match all occurrences of "JavaScript"
+            const regex = /JavaScript/g;
+
+            //Find all matches
+            const matches= inputString.match(regex);
+
+            //Log the matches
+            if(matches){
+                console.log('Matches found:', matches);
+            } else {
+                console.log('No matches found.');
+            }
+        }
+
+        //Example usage:
+        const testString= "JavaScript is a veresatile language. Many developes love JavaScript.";
+        findJavaScriptOccurrences(testString);
+    </script>
+
+ </body>
+ </html>
