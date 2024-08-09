@@ -1,0 +1,45 @@
+<!-- Task 8:Write a script to remove an item from sessionStorage. Log the sessionStorage content before and after removal.
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Remove Item from SessionStorage</title>
+ </head>
+ <body>
+ 
+     <button id="removeButton">Remove Name from SessionStorage</button>
+ 
+     <script>
+         // Function to log the contents of sessionStorage
+         function logSessionStorage() {
+             console.log('SessionStorage content:', {...sessionStorage});
+         }
+ 
+         // Initial save to sessionStorage (for demonstration purposes)
+         sessionStorage.setItem('name', 'Santosh kumar Yadav');
+         sessionStorage.setItem('email', 'santosh@gmail.com');
+ 
+         // Log sessionStorage content before removal
+         console.log('Before removal:');
+         logSessionStorage();
+ 
+         // Function to remove an item from sessionStorage and log the results
+         function removeItem() {
+             // Remove the 'name' item from sessionStorage
+             sessionStorage.removeItem('name');
+ 
+             // Log sessionStorage content after removal
+             console.log('After removal:');
+             logSessionStorage();
+         }
+ 
+         // Attach event listener to the button
+         document.getElementById('removeButton').addEventListener('click', removeItem);
+     </script>
+ 
+ </body>
+ </html>
+ 

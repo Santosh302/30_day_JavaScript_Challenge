@@ -1,0 +1,34 @@
+
+<!-- Task 2:Write a script to save an object to localStorage by converting it to a json string. Retrive and parse the object, then log it,
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let myObject={
+        name:"Santosh Kumar Yadav",
+        age:24,
+        profession:'Engineer'
+       } ;
+
+       //Conver the object to a JSON string and savt it to localStorage
+       localStorage.setItem('myObject', JSON.stringify(myObject));
+
+       //Retrieve the JSON string from localStorge
+       let retrievedString= localStorage.getItem('myObject');
+
+       //Parse the JSON string back into an object
+       let retrievedObject = JSON.parse(retrievedString);
+
+       //Log the retrieved object
+       console.log(retrievedObject);
+
+
+    </script>
+</body>
+</html>

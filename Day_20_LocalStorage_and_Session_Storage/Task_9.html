@@ -1,0 +1,36 @@
+<!-- Task 9: Write a function that accepts a key and value, and saves the value to both localStorage and sessionStorage. Retrieve and log the values from both storage mechanisms.
+ -->
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage Example</title>
+</head>
+<body>
+
+    <script>
+        // Function to save a value to both localStorage and sessionStorage
+        function saveToBothStorages(key, value) {
+            // Save to localStorage
+            localStorage.setItem(key, value);
+
+            // Save to sessionStorage
+            sessionStorage.setItem(key, value);
+
+            // Retrieve and log the values from both storages
+            let localStorageValue = localStorage.getItem(key);
+            let sessionStorageValue = sessionStorage.getItem(key);
+
+            console.log(`Value in localStorage for key '${key}':`, localStorageValue);
+            console.log(`Value in sessionStorage for key '${key}':`, sessionStorageValue);
+        }
+
+        // Example usage:
+        saveToBothStorages('username', 'Santosh Kumar yadav');
+
+    </script>
+
+</body>
+</html>

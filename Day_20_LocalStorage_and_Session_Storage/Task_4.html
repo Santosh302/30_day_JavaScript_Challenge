@@ -1,0 +1,45 @@
+<!-- Task 4:Write a script to remove an item from localStorage. Log the localStorage content before and after removal. 
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Remove Item from LocalStorage</title>
+ </head>
+ <body>
+ 
+     <button id="removeButton">Remove Name from LocalStorage</button>
+ 
+     <script>
+         // Function to log the contents of localStorage
+         function logLocalStorage() {
+             console.log('LocalStorage content:', { ...localStorage });
+         }
+ 
+         // Initial save to localStorage (for demonstration purposes)
+         localStorage.setItem('name', 'santosh kumar yadav');
+         localStorage.setItem('email', 'santosh@gmail.com');
+ 
+         // Log localStorage content before removal
+         console.log('Before removal:');
+         logLocalStorage();
+ 
+         // Function to remove an item from localStorage and log the results
+         function removeItem() {
+             // Remove the 'name' item from localStorage
+             localStorage.removeItem('name');
+ 
+             // Log localStorage content after removal
+             console.log('After removal:');
+             logLocalStorage();
+         }
+ 
+         // Attach event listener to the button
+         document.getElementById('removeButton').addEventListener('click', removeItem);
+     </script>
+ 
+ </body>
+ </html>
+ 

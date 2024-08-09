@@ -1,0 +1,38 @@
+<!-- Task 6: Write a script to save an object to sessionStorage by converting it to a JSON string. 
+Retrieve and parse the object, then log it.
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>SessionStorage Object Example</title>
+ </head>
+ <body>
+ 
+     <script>
+         // Create an object
+         let myObject = {
+             name: 'Santosh Yadav',
+             age: 24,
+             profession: 'Full Stack Web Developer'
+         };
+ 
+         // Convert the object to a JSON string and save it to sessionStorage
+         sessionStorage.setItem('userProfile', JSON.stringify(myObject));
+ 
+         // Retrieve the JSON string from sessionStorage
+         let retrievedObjectString = sessionStorage.getItem('userProfile');
+ 
+         // Parse the JSON string back into an object
+         let retrievedObject = JSON.parse(retrievedObjectString);
+ 
+         // Log the retrieved object
+         console.log(retrievedObject);
+
+     </script>
+ 
+ </body>
+ </html>
+ 
