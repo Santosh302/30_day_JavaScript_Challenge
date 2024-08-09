@@ -7,7 +7,7 @@ Retrive and parse the object, then log it,
 */
 
 /* Activity 2:Using LocalStorage
-Task 3:Create a simple form that user input(name and email) to localStorage when submitted. Retrive and display the saved data on page load.
+Task 3:Create a simple form that saves user input(name and email) to localStorage when submitted. Retrive and display the saved data on page load.
 Task 4:Write a script to remove an item from localStorage. Log the localStorage content before and after removal. 
 */
 
@@ -20,11 +20,11 @@ Retrieve and parse the object, then log it.
 /* Activity 4: Using SessionStorage
 Task 7: Create a simple form that saves user input(e.g, name and email) to sessionStorage 
 when submitted. Retrieve and display the saved data on page load.
-Task 8:Write a script to remove an item from sessionStoragea. Log the sessionStorage content before and after removal.
+Task 8:Write a script to remove an item from sessionStorage. Log the sessionStorage content before and after removal.
 */
 
 /* Activity 5: Comparing LocalStorage and SessionStorage
-Task 9: Write a function that accepts a key and value, and saves the value to both localStorage and sessionStorage. Retrieve and log the vlaues from both storage mechanisms.
+Task 9: Write a function that accepts a key and value, and saves the value to both localStorage and sessionStorage. Retrieve and log the values from both storage mechanisms.
 Task 10:Write a function that clear all data from both localStorage and sessionStorage.Verify that both storage are empty.
 */
 
