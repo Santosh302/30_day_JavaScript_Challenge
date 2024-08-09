@@ -1,6 +1,8 @@
 /* LeetCode Medium 
 */
 
+/* I will do it later in Setember */
+
 /* Activity 1: Add Two Numbers 
 Task 1: Solve the "Add Two Numbers" problem on LeetCode.
 *Write a function that takes two non-empty linked list representing two non-negative intergers. The digits are stored in reverse order, and each node contains a single digit. Add the two numbers and return the sum as a linked list.
