@@ -1,2 +1,39 @@
 <!-- Task 6: Write a regular expression to capture the username and domain from an email 
 address. Log the captures. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capture Email Parts Example</title>
+</head>
+<body>
+
+    <script>
+        // Function to capture the username and domain from an email address
+        function captureEmailParts(emailAddress) {
+            // Regular expression to capture username and domain
+            const regex = /^(.+)@(.+)$/;
+
+            // Execute the regular expression
+            const matches = emailAddress.match(regex);
+
+            // Log the captures
+            if (matches) {
+                const [, username, domain] = matches;
+                console.log('Username:', username);
+                console.log('Domain:', domain);
+            } else {
+                console.log('No match found.');
+            }
+        }
+
+       
+        const testEmail = "santosh@gmail.com";
+        captureEmailParts(testEmail);
+
+    </script>
+
+</body>
+</html>
