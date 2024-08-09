@@ -1,2 +1,37 @@
 <!-- Task 7:Write a regular expression to match a word only if it at the beginning of a string.Log the matches.
  -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Match Word at Beginning Example</title>
+ </head>
+ <body>
+ 
+     <script>
+        
+         function matchWordAtBeginning(inputString) {
+             // Regular expression to match a word at the beginning of the string
+             const regex = /^\b\w+\b/;
+ 
+             // Find the match
+             const match = inputString.match(regex);
+ 
+             // Log the match
+             if (match) {
+                 console.log('Word at the beginning:', match[0]);
+             } else {
+                 console.log('No word found at the beginning.');
+             }
+         }
+ 
+         
+         const testString = "Hello world! This is a Santosh kumar yadav.";
+         matchWordAtBeginning(testString);
+ 
+     </script>
+ 
+ </body>
+ </html>
+ 
