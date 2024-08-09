@@ -1,2 +1,34 @@
 <!-- Task 2: Write a regular expression to match all digits in a string. Log the matches.
  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match Digits Example</title>
+</head>
+<body>
+    <script>
+        //Function to find all digits in a string using a regular expression
+        function findAllDigits(inputString){
+            //Regular expression to match all digits
+            const regex =/\d+/g;
+
+            //Find all matches
+            const matches= inputString.match(regex);
+
+            //Log the matches
+            if(matches){
+                console.log('Digits found:', matches);
+            } else {
+                console.log('No digits found.');
+            }
+        }
+
+        //Example usage:
+        const testString= "My phone number is 123-456-7890 and my postal code is 98765.";
+        findAllDigits(testString);
+    </script>
+</body>
+</html>

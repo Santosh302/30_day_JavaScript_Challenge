@@ -1,2 +1,34 @@
 <!-- Task 3: Write a regular expression to match all words in a string that start with a capital letter. Log the matches.
  -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match Capitalized Words Example</title>
+ </head>
+ <body>
+    <script>
+        function findCapitalizedWords(inputString){
+
+            //Regular expression to match words starting with a capital letter
+            const regex= /\b[A-Z][a-z]*\b/g;
+
+            //Find all matches
+            const matches = inputString.match(regex);
+
+            //Log the matches
+            if(matches){
+                console.log('Capitalized words found:', matches);
+            } else {
+                console.log('No capitalized words found.');
+            }
+        }
+
+        //String
+        const testString ="Hello, my name is Santosh Kumar Yadav. I live in Uttar Pradesh.";
+        findCapitalizedWords(testString);
+    </script>
+ </body>
+ </html>
