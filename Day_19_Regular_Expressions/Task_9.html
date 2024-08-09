@@ -1,2 +1,85 @@
 <!-- Task 9: Write a regular expression to validatae a simple password (must include at least one uppercase letter, one lowercase letter, one digit, and one special  character). Log whether the password is valid.
  -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Password Validation Form</title>
+     <style>
+         /* Simple styling for form */
+         body {
+             font-family: Arial, sans-serif;
+             margin: 20px;
+         }
+         .form-container {
+             max-width: 400px;
+             margin: 0 auto;
+         }
+         .form-group {
+             margin-bottom: 15px;
+         }
+         label {
+             display: block;
+             margin-bottom: 5px;
+         }
+         input {
+             width: 100%;
+             padding: 8px;
+             box-sizing: border-box;
+         }
+         .result {
+             margin-top: 10px;
+         }
+     </style>
+ </head>
+ <body>
+ 
+     <div class="form-container">
+         <h1>Password Validation Form</h1>
+         <form id="passwordForm">
+             <div class="form-group">
+                 <label for="password">Enter Password:</label>
+                 <input type="password" id="password" name="password" required>
+             </div>
+             <button type="submit">Validate Password</button>
+         </form>
+         <div id="result" class="result"></div>
+     </div>
+ 
+     <script>
+         // Function to validate a password with specific requirements
+         function validatePassword(password) {
+             // Regular expression to validate the password
+             const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$%^&*!])[A-Za-z\d@#$%^&*!]{8,}$/;
+ 
+             // Test the password against the regular expression
+             return regex.test(password);
+         }
+ 
+         // Handle form submission
+         document.getElementById('passwordForm').addEventListener('submit', function(event) {
+             event.preventDefault(); // Prevent form from submitting normally
+ 
+             // Get the password from the form input
+             const password = document.getElementById('password').value;
+ 
+             // Validate the password
+             const isValid = validatePassword(password);
+ 
+             // Display the result
+             const resultElement = document.getElementById('result');
+             if (isValid) {
+                 resultElement.textContent = 'Password is valid.';
+                 resultElement.style.color = 'green';
+             } else {
+                 resultElement.textContent = 'Password is invalid. Must include at least one uppercase letter, one lowercase letter, one digit, and one special character.';
+                 resultElement.style.color = 'red';
+             }
+         });
+     </script>
+ 
+ </body>
+ </html>
+ 

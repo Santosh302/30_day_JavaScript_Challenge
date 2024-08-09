@@ -1,2 +1,84 @@
 <!-- Task 10: Write  a regular expression to validate a URL. Log whether the URL is valid.
  -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>URL Validation Form</title>
+     <style>
+         /* Simple styling for form */
+         body {
+             font-family: Arial, sans-serif;
+             margin: 20px;
+         }
+         .form-container {
+             max-width: 400px;
+             margin: 0 auto;
+         }
+         .form-group {
+             margin-bottom: 15px;
+         }
+         label {
+             display: block;
+             margin-bottom: 5px;
+         }
+         input {
+             width: 100%;
+             padding: 8px;
+             box-sizing: border-box;
+         }
+         .result {
+             margin-top: 10px;
+         }
+     </style>
+ </head>
+ <body>
+ 
+     <div class="form-container">
+         <h1>URL Validation Form</h1>
+         <form id="urlForm">
+             <div class="form-group">
+                 <label for="url">Enter URL:</label>
+                 <input type="text" id="url" name="url" required>
+             </div>
+             <button type="submit">Validate URL</button>
+         </form>
+         <div id="result" class="result"></div>
+     </div>
+ 
+     <script>
+         // Function to validate a URL
+         function validateURL(url) {
+             // Regular expression to validate a URL
+             const regex = /^(https?:\/\/)?([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}(\/.*)?$/;
+ 
+             // Test the URL against the regular expression
+             return regex.test(url);
+         }
+ 
+         // Handle form submission
+         document.getElementById('urlForm').addEventListener('submit', function(event) {
+             event.preventDefault(); // Prevent form from submitting normally
+ 
+             // Get the URL from the form input
+             const url = document.getElementById('url').value;
+ 
+             // Validate the URL
+             const isValid = validateURL(url);
+ 
+             // Display the result
+             const resultElement = document.getElementById('result');
+             if (isValid) {
+                 resultElement.textContent = 'URL is valid.';
+                 resultElement.style.color = 'green';
+             } else {
+                 resultElement.textContent = 'URL is invalid. Please enter a valid URL.';
+                 resultElement.style.color = 'red';
+             }
+         });
+     </script>
+ 
+ </body>
+ </html>
+ 

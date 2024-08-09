@@ -1,2 +1,37 @@
 <!-- Task 8: Write a regular expression to match a word only if it is at the end of a string.Log the matches.
  -->
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match Word at End Example</title>
+</head>
+<body>
+
+    <script>
+        // Function to find a word only if it is at the end of the string
+        function matchWordAtEnd(inputString) {
+            // Regular expression to match a word at the end of the string
+            const regex = /\b\w+\b$/;
+
+            // Find the match
+            const match = inputString.match(regex);
+
+            // Log the match
+            if (match) {
+                console.log('Word at the end:', match[0]);
+            } else {
+                console.log('No word found at the end.');
+            }
+        }
+
+        // Example usage:
+        const testString = "This is a test sentence with endword";
+        matchWordAtEnd(testString);
+
+    </script>
+
+</body>
+</html>

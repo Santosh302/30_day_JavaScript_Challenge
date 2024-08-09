@@ -13,7 +13,7 @@
         
          function matchWordAtBeginning(inputString) {
              // Regular expression to match a word at the beginning of the string
-             const regex = /^\b\w+\b/;
+             const regex = /^\b\w+\b/; /* /\b\w+\b$/; to check the end of string */
  
              // Find the match
              const match = inputString.match(regex);
