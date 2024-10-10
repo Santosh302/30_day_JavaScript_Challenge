@@ -16,7 +16,7 @@ Task 4:Add a method to the book object that takes a parameter(Year) and updates 
 console.log(Book.getDetails()); */
 
 /* Task 4 */
-const Book={
+ const Book={
     title:'Computer Basic',
     author:'Santosh Kumar Yadav',
     Year:'2024',
@@ -26,4 +26,6 @@ const Book={
 }
 Book.updateYear(2025);
 
-console.log(Book.Year);
+console.log(Book.Year); 
+
+
