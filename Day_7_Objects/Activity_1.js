@@ -9,10 +9,11 @@ Task 2: Access and log the title and author properties of the book object.
 /* first method to create object */
 
 
+
 const Book={};
 Book.title="Computer Basic";
 Book.author="Santosh Kumar Yadav";
-Book.Year=2024;
+Book.Year=2024; 
 /* console.log(Book); */
 
 
@@ -36,3 +37,12 @@ console.log(myBook);
  */
 /* Task 2 */
 console.log(`${Book.title}  and ${Book.author}`);
+
+
+
+//4 Way to create object
+/* const Book= {
+    title:"computer Basic",
+    author:"Santosh Kumar Yadav",
+    year:'2024'
+} */
